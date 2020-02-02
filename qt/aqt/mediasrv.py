@@ -140,7 +140,7 @@ class RequestHandler(http.server.SimpleHTTPRequestHandler):
             newPath = os.path.join(_exportFolder, path[len(targetPath) :])
             return newPath
 
-        # catch /_addons references and rewrite them to addons folder
+        # catch /_addons references and rewrite them to addons21 folder
         targetPath = os.path.join(os.getcwd(), "_addons", "")
         if path.startswith(targetPath):
             try:

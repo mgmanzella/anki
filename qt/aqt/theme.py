@@ -148,7 +148,7 @@ QTabWidget { background-color: %s; }
                     self.str_color("window-bg"),
                 )
 
-        # allow addons to modify the styling
+        # allow addons21 to modify the styling
         buf = gui_hooks.style_did_init(buf)
 
         app.setStyleSheet(buf)
