@@ -299,7 +299,8 @@ and no other programs are accessing your profile folders, then try again."""
 
             return os.path.join(get_appdata(), "Anki2")
         elif isMac:
-            return os.path.expanduser("~/Library/Application Support/Anki2")
+            # return os.path.expanduser("~/Library/Application Support/Anki2")
+            return os.path.expanduser('~/anki/data')
         else:
             dataDir = os.environ.get(
                 "XDG_DATA_HOME", os.path.expanduser("~/.local/share")

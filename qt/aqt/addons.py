@@ -679,7 +679,7 @@ class AddonsDialog(QDialog):
         self.form.addonList.currentRowChanged.connect(self._onAddonItemSelected)
         self.setAcceptDrops(True)
         self.redrawAddons()
-        restoreGeom(self, "addons")
+        restoreGeom(self, "addons21")
         self.show()
 
     def dragEnterEvent(self, event):
@@ -701,7 +701,7 @@ class AddonsDialog(QDialog):
         self.onInstallFiles(paths)
 
     def reject(self):
-        saveGeom(self, "addons")
+        saveGeom(self, "addons21")
         return QDialog.reject(self)
 
     def name_for_addon_list(self, addon: AddonMeta) -> str:
@@ -833,7 +833,7 @@ class AddonsDialog(QDialog):
         if not paths:
             key = _("Packaged Anki Add-on") + " (*{})".format(self.mgr.ext)
             paths = getFile(
-                self, _("Install Add-on(s)"), None, key, key="addons", multi=True
+                self, _("Install Add-on(s)"), None, key, key="addons21", multi=True
             )
             if not paths:
                 return False
@@ -888,7 +888,7 @@ class GetAddons(QDialog):
         saveGeom(self, "getaddons")
 
     def onBrowse(self):
-        openLink(aqt.appShared + "addons/2.1")
+        openLink(aqt.appShared + "addons21/2.1")
 
     def accept(self):
         # get codes
