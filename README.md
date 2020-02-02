@@ -1,11 +1,4 @@
-This repo contains all the code for the computer version of Anki.
+This is a forked version of Anki with the AwesomeTTS Google Text To Speech add-on (https://ankiweb.net/shared/info/814349176).
 
-If you'd like to try development builds of Anki but don't feel comfortable
-building the code, please see
-https://anki.tenderapp.com/discussions/beta-testing
 
-For more information on building, please see README.development
-
-If you'd like to contribute code, please see README.contributing
-
-![](https://github.com/ankitects/anki/workflows/Checks/badge.svg)
+The official version of Anki can be found at https://apps.ankiweb.net. For more info on AwesomeTTS see https://ankiatts.appspot.com/.
